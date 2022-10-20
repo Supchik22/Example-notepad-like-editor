@@ -1,5 +1,5 @@
 # kirpaedit
-##How to build?
+Packages
 ```bash
 pip install customtkinter
 ```
