@@ -20,7 +20,7 @@ def open_file():
     with open(filepath, "r") as input_file:
         text = input_file.read()
         txt_edit.insert(customtkinter.END, text)
-    window.title(f"KirpaEdit - {filepath}")
+    window.title(f"Example notebook - {filepath}")
 #=================================================================---.
 def save_file(event):
     #Save a file.
@@ -33,7 +33,7 @@ def save_file(event):
     with open(filepath, "w") as output_file:
         text = txt_edit.get(1.0, tk.END)
         output_file.write(text)
-    window.title(f"KirpaEdit - {filepath}")
+    window.title(f"Example notebook - {filepath}")
 #=================================================================|
 def s_file():#							  |
 	save_file("e")#						  |
@@ -43,7 +43,7 @@ def onKeyPress(event):#						  |
 #=================================================================|
 window = customtkinter.CTk()#					  |
 #=====================Window======================================|
-window.title("KirpaEdit ")#                                       |
+window.title("Example notebook ")#                                       |
 window.rowconfigure(0, minsize=800, weight=1)#                    |
 window.columnconfigure(1, minsize=800, weight=1)#                 |
 #=======================Elements==================================|
